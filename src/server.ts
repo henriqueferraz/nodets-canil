@@ -21,7 +21,7 @@ server.use(express.static(path.join(__dirname, '../public')));
 //Configuração de Rotas
 server.use(todasRotas);
 server.use((req: Request, res: Response) => {
-    res.status(404).send('Página não encontrada - 404');
+    res.status(404).render('pages/404');
 });
 
 
