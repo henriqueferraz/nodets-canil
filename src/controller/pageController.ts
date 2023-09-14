@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 
 
 export const home = (req: Request, res: Response) => {
-    res.send('pagina principal');
+    res.render('pages/pages');
 };
 
 export const cao = (req: Request, res: Response) => {
